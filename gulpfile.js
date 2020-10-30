@@ -1,18 +1,21 @@
 "use strict"
 
-const gulp = require("gulp");
-const rename = require("gulp-rename");
-const csso = require("gulp-csso");
-const sass = require("gulp-sass");
+import gulp from 'gulp';
+import rename from 'gulp-rename';
+import csso from 'gulp-csso';
+import sass from 'gulp-sass';
 
-gulp.task("css", function () {
+
+export const css = () => {
   return gulp.src("scss/style.scss")
     .pipe(sass())
     .pipe(csso())
     .pipe(rename("style-min.css"))
     .pipe(gulp.dest("css"))
-});
+}
 
-gulp.task("watch", function () {
-  gulp.watch("scss/**/*.{scss, sass}", gulp.series("css"));
-});
+// Watch
+
+export const watch = () => {
+  gulp.watch("scss/**/*.scss", gulp.series(css));
+}

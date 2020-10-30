@@ -1,8 +1,8 @@
 {
-  "name": "calories",
-  "version": "1.0.0",
-  "description": "Счетчик калорий",
+  "private": true,
+  "type": "module",
   "scripts": {
+    "style": "gulp css",
     "watch": "gulp watch"
   },
   "repository": {
