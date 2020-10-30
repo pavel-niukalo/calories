@@ -7,15 +7,15 @@ import sass from 'gulp-sass';
 
 
 export const css = () => {
-  return gulp.src("scss/style.scss")
+  return gulp.src("src/scss/style.scss")
     .pipe(sass())
     .pipe(csso())
     .pipe(rename("style-min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("src/css"))
 }
 
 // Watch
 
 export const watch = () => {
-  gulp.watch("scss/**/*.scss", gulp.series(css));
+  gulp.watch("src/scss/**/*.scss", gulp.series(css));
 }
