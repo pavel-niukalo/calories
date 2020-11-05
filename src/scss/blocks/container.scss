@@ -1,12 +1,24 @@
 .container {
   width: 100%;
-  max-width: 1160px;
   margin: 0 auto;
-  padding-right: 300px;
-  padding-left: 300px;
+  padding: 0 15px;
 }
 
 .container--no-padding {
   padding-right: 0;
   padding-left: 0;
+}
+
+@media (min-width:$tablet) {
+  .container {
+    max-width: 590px;
+  }
+}
+
+@media (min-width:$desktop) {
+  .container {
+    max-width: 1160px;
+    padding-right: 300px;
+    padding-left: 300px;
+  }
 }

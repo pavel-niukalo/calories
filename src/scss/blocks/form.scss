@@ -20,15 +20,20 @@
 
 .form__submit {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 42px;
+}
+
+.form__submit-button {
+  margin-bottom: 15px;
 }
 
 .form__reset-button {
   display: inline-flex;
   align-items: center;
   margin: 0;
-  margin-left: 24px;
   padding: 0;
 
   font-size: 20px;
@@ -62,4 +67,14 @@
   margin-right: 1px;
 
   fill: currentColor;
+}
+
+@media (min-width:$tablet) {
+  .form__submit-button {
+    margin-right: 24px;
+  }
+
+  .form__submit {
+    flex-direction: row;
+  }
 }
