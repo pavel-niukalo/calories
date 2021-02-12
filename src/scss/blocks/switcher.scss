@@ -95,3 +95,7 @@
 .switcher__item input[type="radio"]:checked + label:hover {
   color: $color-text-white;
 }
+
+.switcher__item input[type="radio"]:focus + label {
+  box-shadow: 0 0 3px 3px $color-accent-hover;
+}

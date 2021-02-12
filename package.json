@@ -2,25 +2,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "style": "gulp css",
+    "style": "gulp styles",
     "watch": "gulp watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PavelNyukalo/calories.git"
-  },
-  "keywords": [
-    "calories"
-  ],
-  "author": "Pavel Nyukalo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PavelNyukalo/calories/issues"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
   }
 }

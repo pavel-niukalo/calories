@@ -2,10 +2,6 @@
   width: fit-content;
 }
 
-.radio__wrapper:focus {
-  outline: 1px dotted $color-accent;
-}
-
 .radio__wrapper label {
   display: flex;
   align-items: flex-start;
@@ -59,6 +55,10 @@
 
 .radio__wrapper input[type="radio"]:checked + label::before {
   background-image: url("../img/icon-radio-checked.svg");
+}
+
+.radio__wrapper input[type="radio"]:focus + label {
+  outline: 1px dotted $color-accent;
 }
 
 .radio__wrapper label:hover,
