@@ -4,14 +4,14 @@
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Caption", "Arial", sans-serif;
+  list-style: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  font-family: "PT Sans Caption", "Arial", sans-serif;
   text-align: center;
 
   border-radius: 4px;
-  list-style: none;
 }
 
 .switcher__item {
@@ -44,17 +44,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 14px;
 
+  text-align: center;
   color: $color-text-black;
 
-  user-select: none;
-  cursor: pointer;
-  border: solid 0.5px $color-accent;
   background-color: transparent;
+  border: solid 0.5px $color-accent;
+  cursor: pointer;
+
   transition: 0.3s ease;
   transition-property: color, border, background, z-index, margin;
+
+  user-select: none;
 
   &:hover {
     z-index: 3;
@@ -78,7 +80,7 @@
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .switcher__item input[type="radio"]:checked + label {
@@ -86,8 +88,8 @@
 
   color: $color-text-white;
 
-  border-color: transparent;
   background-color: $color-accent;
+  border-color: transparent;
 }
 
 .switcher__item input[type="radio"]:checked + label:hover {

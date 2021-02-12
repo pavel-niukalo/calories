@@ -1,8 +1,8 @@
 .inputs-group {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 
@@ -16,7 +16,7 @@
 
 @media (min-width: $desktop) {
   .inputs-group .input:nth-child(2) {
-    margin-left: 47px;
     margin-right: auto;
+    margin-left: 47px;
   }
 }
