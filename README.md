@@ -7,7 +7,7 @@
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox
 
-[Ссылка на проект](https://pavelnyukalo.github.io/calories/)
+[Ссылка на проект](https://pavel-nyukalo.github.io/calories/)
 
 ## Используемые технологии
 * Готовый HTML
